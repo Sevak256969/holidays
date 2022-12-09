@@ -1,7 +1,7 @@
 import { Component } from "react";
 import menuItems from './header.json'
 import {MenuItem } from '../MainTags';
-import styles from './Header.module.css'
+import styles from './Header.module.css';
 
 class Nav extends Component{   
     render(){
@@ -15,7 +15,6 @@ class Nav extends Component{
            </nav>
         )
     }
-}
-
+};
 
 export default Nav;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { HolidaysPatern,HolidaysPaternP,GiftParentNumber } from "../../MainTags";
-
+import { HolidaysPatern,HolidaysPaternP,GiftParentNumber,HolidaysDiv } from "../../MainTags";
 
 class Holidays extends Component {
     constructor(){
@@ -15,7 +14,6 @@ class Holidays extends Component {
         .then(res=>res.json())
         .then(result=>this.setState({data:result}))
     }
- 
     render() {
         return (
             <HolidaysPatern>
@@ -24,12 +22,14 @@ class Holidays extends Component {
                     <p>“Try our web app to find the best gifts for all occasions”</p>
                 </HolidaysPaternP>
                 <GiftParentNumber>
-                <div>
-                    {[...Array(4)].map((item,index)=>(
-                        <h2 onClick={()=>this.setState({id:index+1})} 
-                        className={index+1===this.state.id ? 'active' : undefined } 
-                        key={index}>0{index+1}</h2>))}
-                </div>                 
+                    <div>
+                        {[...Array(4)].map((item,index)=>(
+                            <HolidaysDiv onClick={()=>this.setState({id:index+1})} 
+                            className={index+1===this.state.id ? 'active' : undefined } 
+                            key={index}>0{index+1}</HolidaysDiv>
+                        ))}
+                        {/* `${styled.HolidaysDiv}` */}
+                    </div>                 
                     {this.state.data.map(item=>(
                         item.id===this.state.id ? (
                         <div key={item.id}>
@@ -41,7 +41,7 @@ class Holidays extends Component {
                 </GiftParentNumber>
             </HolidaysPatern>
         );
-    }
+    };
 }
 
 export default Holidays;

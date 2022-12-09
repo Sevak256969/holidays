@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { ReadyBtn1,ReadyBtn2, ReadyBlock,ReadyBtnDiv } from '../../MainTags'
+import React, { Component } from 'react';
+import { ReadyBtn1,ReadyBtn2, ReadyBlock,ReadyBtnDiv } from '../../MainTags';
 
 export default class ReadyText extends Component {
   render() {
@@ -16,4 +16,4 @@ export default class ReadyText extends Component {
         </ReadyBlock>
     )
   }
-}
+};

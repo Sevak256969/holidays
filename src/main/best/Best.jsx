@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import { BestText } from '../../MainTags'
+import React, { Component } from 'react';
+import { BestTextBlock,BestLearnMoreBtn, BestTextBlockP,BestTextBlockH2 } from '../../MainTags';
 
 export default class Best extends Component {
   render() {
     return (
-      <BestText>
-        <h2>Mr. John Doe</h2>
-        <p>The best way to wish your wife</p>
-        <button>Leanr more</button>
-      </BestText>
+      <BestTextBlock>
+        <BestTextBlockH2>Mr. John Doe</BestTextBlockH2>
+        <BestTextBlockP>The best way to wish your wife</BestTextBlockP>
+        <BestLearnMoreBtn>Read More</BestLearnMoreBtn>
+      </BestTextBlock>
     )
   }
-}
+};

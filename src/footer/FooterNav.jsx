@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import data from './footerData.json'
+import React, { Component } from 'react';
+import data from './footerData.json';
 import { FooterParent } from "../MainTags";
 
 export default class FooterNav extends Component {
@@ -12,4 +12,4 @@ export default class FooterNav extends Component {
       </nav>
     )
   }
-}
+};
