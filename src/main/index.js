@@ -1,6 +1,4 @@
-
 import { Component } from 'react';
-// import {Title} from '../MainTags'
 import FindGift from './findGift/index';
 import Holidays from './holidays/Holidays';
 import HowToWork from './howToWork';
@@ -19,7 +17,7 @@ class Main extends Component{
             </main>
         )
     }
-}
+};
 
 
-export default Main
+export default Main;

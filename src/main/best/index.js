@@ -3,18 +3,21 @@ import  BestTextStart from './BestTextStart';
 import  BestImg from './BestImg';
 import  Best from './Best';
 import  TextBest from './TextBest';
+import { BestIndexSection, BestIndex,BestIndexImg } from '../../MainTags';
 
 export default class BestInd extends Component {
   render() {
     return (
-      <section>
-        <div>
+      <BestIndexSection>
+        <BestIndex>
           <BestTextStart/>
-          <BestImg/> 
-          <Best/>
+          <BestIndexImg>
+            <BestImg/> 
+            <Best/>
+          </BestIndexImg>          
           <TextBest/>
-        </div>
-      </section>
+        </BestIndex>
+      </BestIndexSection>
     )
   }
-}
+};

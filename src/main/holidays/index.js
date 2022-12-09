@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import Holidays from './Holidays'
+import React, { Component } from 'react';
+import Holidays from './Holidays';
 
 export default class HolidaysIndex extends Component {
   render() {
@@ -9,4 +9,4 @@ export default class HolidaysIndex extends Component {
       </div>
     )
   }
-}
+};

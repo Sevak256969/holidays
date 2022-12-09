@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class TextHolidays extends Component {
   render() {
@@ -6,4 +6,4 @@ export default class TextHolidays extends Component {
       <div>TextHolidays</div>
     )
   }
-}
+};
