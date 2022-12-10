@@ -46,7 +46,6 @@ export const SectionGift = styled.section`
   background: #f1f1f2;
 `;
 
-
 export const TextBlock=styled.div`
 display:flex;
 flex-direction:column;
