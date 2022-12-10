@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LearnMoreBtn, TextBlock, TextBlockP } from '../../MainTags';
+import {TextBlock, LearnMoreBtn,  TextBlockP } from '../../MainTags';
 
 export default class HowToWorkText extends Component {
   render() {

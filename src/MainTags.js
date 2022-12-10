@@ -24,7 +24,14 @@ export const Button = styled.button`
     background: #f7941e;
     color: white;
   }
+  @media (max-width: 1024px) {
+    display:flex;
+    align-items:center;
+    text-align: center;
+    text-transform: uppercase;
+  }
 `;
+
 export const Button2 = styled(Button)`
   background: #f7941e;
   color: white;
@@ -33,17 +40,25 @@ export const Button2 = styled(Button)`
     color: #f7941e;
   }
 `;
+
 export const LearnMoreBtn = styled(Button)`
   padding:21px 47px;
 `;
+
 export const Img = styled.img.attrs((props) => ({
   src: props.src,
-}))`
+  }))`
   width: 50%;
+  @media (max-width: 1024px) {
+    padding: 25px 0;
+  }
 `;
 
 export const SectionGift = styled.section`
   background: #f1f1f2;
+  @media (max-width: 1024px) {
+   background: #f1f1f2;
+  }
 `;
 
 export const TextBlock=styled.div`
@@ -53,6 +68,11 @@ export const TextBlock=styled.div`
   gap:26px;
   width:28%;
   margin:auto;
+  @media (max-width: 1024px) {
+    padding: 15px 0;
+    display:flex; 
+    align-items:center;
+  }
 `;
 
 export const TextBlockP=styled.p`
@@ -60,21 +80,37 @@ export const TextBlockP=styled.p`
   line-height: 1.5;
   text-align: justify;
   color: #000000;
-`;
+`;  
+
 export const GiftParent=styled.div`
   display:flex;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    padding: 25px 0;
+  }
 `;
+
 export const HolidaysPatern= styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
 `;
+
 export const HolidaysPaternP= styled.div`
   display:flex;
   flex-direction: column;
   align-items: center;
   padding:50px;
-`
+`;
+
 export const HolidaysDiv=styled.h2` 
   &.active{
     color:  #F7941E;
@@ -85,6 +121,11 @@ export const GiftParentNumber=styled.div`
   display:flex;
   padding: 0px 0px 40px 0px;
   gap:70px;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
 `;
 
 export const SectionReady=styled.section`
@@ -94,12 +135,35 @@ export const SectionReady=styled.section`
 export const ReadyBlock=styled.section`
   display: flex;
   align-items: center;
-  justify-content: space-around
+  justify-content: space-around;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+  }
+`;
+
+export const ReadyBlockDiv=styled.div`
+  font-family: 'Gilroy';
+  font-size: 32px;
+  line-height: 141%;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ReadyBtnDiv=styled.div`
   display: flex;
-  gap: 15px
+  gap: 15px;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content: center; 
+  }
 `;
 
 export const ReadyBtn1=styled(Button)`
@@ -120,12 +184,18 @@ export const TextBlockBest = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+  }
 `;
 
 export const BestIndexSection = styled.section`
   width: 75%;
   height: auto;
-  margin: auto
+  margin: auto;
 `;
 export const BestIndex = styled.div`
   display: flex;
@@ -136,6 +206,12 @@ export const ImgBest = styled.img.attrs((props) => ({
   src: props.src,
   }))`
   width: 35%;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+  }
 `;
 
 export const BestTextBlock=styled.div`
@@ -144,6 +220,12 @@ export const BestTextBlock=styled.div`
   align-items:flex-start;
   margin:auto;
   padding: 15px 80px;
+  background: #231F20;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
 `;
 
 export const BestTextBlockH2=styled.h2`
@@ -162,7 +244,11 @@ export const BestTextBlockP=styled.p`
 
 export const BestIndexImg=styled.div`
   display: flex;
-  background-color: black;
+  @media (max-width: 1024px) {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+  }
 `;
 
 export const BestH2=styled.h2`
@@ -184,6 +270,7 @@ export const BestLearnMoreBtn=styled.button`
   font-family: 'Gilroy';
   font-size: 18px;
   background: none;
+  border: none;
   color: #FFFFFF;
 `;
 
@@ -192,10 +279,12 @@ export const TextBestDiv=styled.div`
   gap:25px;
   padding: 25px 0;
 `;
+
 export const TextBestP=styled.p`
   font-family: 'Gilroy';
   font-size: 18px;
 `;
+
 export const TextBestH=styled.h2`
   font-family: 'Gilroy';
   font-size: 24px;
@@ -210,14 +299,22 @@ export const TextBestBtn=styled.button`
 `;
 
 export const FooterAll = styled.footer`
-  background: #FAFAFA;
+  background-color: #FAFAFA;
+  @media (max-width: 768px) {
+    background-color: #FAFAFA;
+  }
 `;
-
 export const FooterParent = styled.ul`
   display:flex;
   justify-content: center;
   gap:80px;
   padding:50px;
+  @media (max-width: 768px) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
 `;
 
 export const FooterParent1 = styled.div`
@@ -225,6 +322,12 @@ export const FooterParent1 = styled.div`
   justify-content: center;
   gap:26px;
   padding: 50px 0;
+  @media (max-width: 768px) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
 `;
 
 export const FooterParent2 = styled.p`
@@ -232,4 +335,10 @@ export const FooterParent2 = styled.p`
   justify-content: center;
   gap:26px;
   padding: 25px 0;
+  @media (max-width: 768px) {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
 `;
